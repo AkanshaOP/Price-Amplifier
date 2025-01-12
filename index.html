@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    
+    <header><div class="op">
+        <img class="juck" src="price.png" alt="">
+        <h1 class="don">Price Comparison</h1>
+        <h2 class="son">You can find product wirh less price</h2>
+        <input class="search"   type="TEXT"id="searchBox" placeholder="Search for a product..." onkeyup="searchProducts()">
+        <!DOCTYPE html>
+        
+       </div>
+    </header>
+     
+    <img class="blue" src="tug.webp" alt="">
+     <h1 class="fonts">Iphone</h1>
+    
+    <main id="productList">
+       
+       
+        <section class="product" data-name="Product Type 1">
+            <h2>Apple iPhone 16 (128 GB) - Ultramarine</h2>
+            <img src="https://m.media-amazon.com/images/I/713SsA7gftL._SX679_.jpg" alt="Product 1">
+            <div class="prices">
+               
+                <div class="store"><a href="https://www.amazon.in/Apple-iPhone-16-128-Ultramarine/dp/B0DGJ7TGDR/ref=sr_1_1_sspa?adgrpid=60439252698&dib=eyJ2IjoiMSJ9.yNq9aTafEy3hOFdNwblVwzIhPXBTPf3vjECkGskYyJWoDN1eUD03Ab98CWUlGPmEoR0fFJ38Awsfm10a0CMsjz40xD2-q34kaYkzGXrQ6RqAGwSafRJT8TIdfxecw6V0Aoxak6XYNBaORJqKoTDoF_-JwQEhBDHRR4pB814RZ0LBkQUhgvGwBvr8lHiIZe9fNxN5mhGLZpbqb7mVHn-saO4It06MiSI_kFBjYd80ulU._dIn4428quINFbBX3jVz_5oStVNwegVegbklCGOYDx4&dib_tag=se&ext_vrnc=hi&hvadid=590592770130&hvdev=c&hvlocphy=9151662&hvnetw=g&hvqmt=e&hvrand=10500147070131049484&hvtargid=kwd-298343829815&hydadcr=15396_2268336&keywords=iphone%2B16&qid=1732632698&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Amazon:</a><span>77,900</span></div>
+                <div class="store"><a href="https://www.apple.com/in/iphone-16/?afid=p238%7Cs-dc_mtid_209254ho67063_pcrid_714391919741_pgrid_168050303700_pexid__ptid_kwd-2584002475_&cid=wwa-in-kwgo-iphone-slid----Pre+Order-">Apple store:</a> <span>79,900</span></div>
+                <div class="store"><a href="https://www.flipkart.com/apple-iphone-16-ultramarine-128-gb/p/itmcc210cae43fba?pid=MOBH4DQFYZT6EH2F&lid=LSTMOBH4DQFYZT6EH2FP6PUJU&marketplace=FLIPKART&cmpid=content_mobile_8965229628_gmc">Flipkart:</a> <span>79,900</span></div>
+            </div>
+        </section>
+        
+        <!-- Repeat similar product sections for each product type up to 10 -->
+        <section class="product" data-name="Product Type 2">
+            <h2>Apple iPhone 16 Pro (1 TB) - Desert Titanium</h2>
+            <img src="https://m.media-amazon.com/images/I/61JvFLHZ6NL._SX679_.jpg" alt="Product 1">
+            <div class="prices">
+                <div class="store"><a href="https://www.amazon.in/dp/B0DGHXHZNL?th=1">Amazon:</a> <span>1,69,900</span></div>
+                <div class="store"><a href="https://www.apple.com/in/iphone-16-pro/">Apple store:</a> <span>1,19,900</span></div>
+                <div class="store"><a href="https://www.flipkart.com/apple-iphone-16-pro-max-natural-titanium-1-tb/p/itm8ba556043227d?pid=MOBH4DQFPP3ZHHXW&lid=LSTMOBH4DQFPP3ZHHXWICYO8S&marketplace=FLIPKART&q=i+phone+16+pro+max&store=tyy%2F4io&srno=s_1_2&otracker=AS_Query_OrganicAutoSuggest_8_9_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_8_9_na_na_na&fm=organic&iid=4dda7e6e-c861-4801-a6fa-fccfa200db18.MOBH4DQFPP3ZHHXW.SEARCH&ppt=pp&ppn=pp&ssid=depmgd6gsw0000001732651215675&qH=62177aa31210ee2e">Flipkart:</a><span>1,84,900</span></div>
+            </div>
+        </section>
+
+       
+
+        <section class="product" data-name="Product Type 10">
+            <h2>Apple iPhone 15 (128 GB) - Pink</h2>
+            <img src="https://m.media-amazon.com/images/I/71v2jVh6nIL._SX679_.jpg" alt="Product 10">
+            <div class="prices">
+                <div class="store"> <a href="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/B0CHX3TW6X/ref=sr_1_1_sspa?crid=Q9FV96BHTCJ9&dib=eyJ2IjoiMSJ9.dVABcK2QHCS6eKC7OM7pMv_1L4KWnEB1TUpFQAiJ2pNrqdagKiY49r_aa2KJMgze4sc5WV6S3X-XLqBVBk-h-x6wr_rcZ_Gj9uPPixwNYSzJzpopqo38-wJedKbr4_IZUzQ25faARwh4bDdHdKCalxYiIzA9773AY8FCT5g7vhljrsRXAfPbEhauIShK2_snPXlAgtcLibo4Njx_OXrg39ZIGAWIC2MIumuhK1W-3_o.nqw4N8Rpa7om_avl8blMQUL3pDoBMUb4u-iEqdQfEYM&dib_tag=se&keywords=i+phone+15+pro&qid=1732698212&sprefix=%2Caps%2C230&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon:</a><span>65,900</span></div>
+                <div class="store"> <a href="https://www.apple.com/in/shop/buy-iphone/iphone-15">Apple store:</a><span>69,900</span></div>
+                <div class="store"><a href="https://www.flipkart.com/apple-iphone-15-pink-128-gb/p/itm7579ed94ca647?pid=MOBGTAGPNMZA5PU5&lid=LSTMOBGTAGPNMZA5PU5AVZNIR&marketplace=FLIPKART&q=iphone+15+&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=search-autosuggest&iid=3ad983aa-de2c-4c01-84a8-fab97b126dda.MOBGTAGPNMZA5PU5.SEARCH&ppt=sp&ppn=sp&ssid=mfnb45gt280000001732698366291&qH=9f09767e9f1861f6">Flipkart:</a> <span>58,249</span></div>
+            </div>
+        </section>
+        <section class="product" data-name="Product Type 10">
+            <h2>Apple iPhone 15 Pro Max (256 GB) - White Titanium</h2>
+            <img src="https://m.media-amazon.com/images/I/81c50PU+lpL._SX679_.jpg" alt="Product 10">
+            <div class="prices">
+                <div class="store"> <a href="https://www.amazon.in/Apple-iPhone-Pro-Max-256/dp/B0CHWWW471/ref=sr_1_3?crid=Q9FV96BHTCJ9&dib=eyJ2IjoiMSJ9.dVABcK2QHCS6eKC7OM7pMv_1L4KWnEB1TUpFQAiJ2pNrqdagKiY49r_aa2KJMgze4sc5WV6S3X-XLqBVBk-h-x6wr_rcZ_Gj9uPPixwNYSzJzpopqo38-wJedKbr4_IZUzQ25faARwh4bDdHdKCalxYiIzA9773AY8FCT5g7vhljrsRXAfPbEhauIShK2_snPXlAgtcLibo4Njx_OXrg39ZIGAWIC2MIumuhK1W-3_o.nqw4N8Rpa7om_avl8blMQUL3pDoBMUb4u-iEqdQfEYM&dib_tag=se&keywords=i+phone+15+pro&qid=1732698212&sprefix=%2Caps%2C230&sr=8-3">Amazon:</a><span>1,15,900</span></div>
+                <div class="store"><a href="https://www.apple.com/in/shop/buy-iphone/iphone-15">Apple store:</a> <span>1,30,999</span></div>
+                <div class="store"><a href="https://www.flipkart.com/apple-iphone-15-pro-max-blue-titanium-256-gb/p/itm4a0093df4a3d7?pid=MOBGTAGP4SVJGGH6&lid=LSTMOBGTAGP4SVJGGH6VFWA1T&marketplace=FLIPKART&q=iphone+15+pro+max&store=tyy%2F4io&srno=s_1_1&otracker=AS_Query_HistoryAutoSuggest_5_0_na_na_na&otracker1=AS_Query_HistoryAutoSuggest_5_0_na_na_na&fm=organic&iid=83b7f246-e10b-42a2-a00a-0279548ae225.MOBGTAGP4SVJGGH6.SEARCH&ppt=hp&ppn=homepage&ssid=0h1l1m55u80000001732698285173&qH=4bc0516d32b4b645">Flipkart:</a> <span>1,31,999</span></div>
+            </div>
+        </section>
+</main>
+
+<div><h1 class="fonts">Samsung</h1></div>
+<main>
+
+</section> <section class="product" data-name="Product Type 10">
+    <h2> Samsung Galaxy S24 Ultra 5G AI Smartphone ( 12GB, 256GB Storage)</h2>
+    <img src="https://m.media-amazon.com/images/I/41fCDR6pjpL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/s?k=samsung+s24+ultra+5g+mobile&crid=183D0RKP6QVOU&sprefix=samsung+s24%2Caps%2C256&ref=nb_sb_ss_ts-doa-p_1_11">Amazon:</a> <span>1,21,999</span></p></div>
+        <div class="store"><a href="https://www.samsung.com/in/smartphones/galaxy-s24-ultra/buy/">Samsung:</a> <span>1,21,999</span></p></div>
+        <div class="store"><a href="https://www.flipkart.com/samsung-galaxy-s24-ultra-5g-titanium-black-256-gb/p/itm20b685e30271b?pid=MOBH3P4UM6ACEC2M&lid=LSTMOBH3P4UM6ACEC2M1KWCQC&marketplace=FLIPKART&q=samsung+s24+ultra&store=tyy%2F4io&spotlightTagId=TrendingId_tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_ps&fm=search-autosuggest&iid=c332a0cf-9ef3-4f1c-abbf-996f43cc145a.MOBH3P4UM6ACEC2M.SEARCH&ppt=sp&ppn=sp&ssid=iswn643t1c0000001732698850536&qH=be291326d56ab781">Flipkart:</a> <span>1,09,999</span></p></div>
+    </div>
+</section>
+
+<section class="product" data-name="Product Type 10">
+    <h2>Samsung Galaxy S24 5G AI Smartphone (Amber Yellow, 8GB, 128GB Storage)</h2>
+    <img src="https://m.media-amazon.com/images/I/71ez69tPl4L._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/gp/aw/d/B0CS5ZZMN8/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=2e62dae7cb4ca48580c2c6d3ad57843f&hsa_cr_id=0&qid=1732698469&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=Pw9Mk&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=NR56MD4SZV8KGDAKBRA4&pd_rd_wg=hWf69&pd_rd_r=e91101fa-55f4-48eb-ad89-5e2523bb65c2">Amazon;</a> <span>74,999</span></div>
+        <div class="store"><a href="https://www.samsung.com/in/smartphones/galaxy-s24/buy/">Samsung;</a> <span>79,999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/search?q=samsung%20s24%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">Flipkart;</a> <span>62,999</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Samsung Galaxy S23 Ultra 5G AI Smartphone ( 12GB, 256GB Storage)</h2>
+    <img src="https://m.media-amazon.com/images/I/41GAnuY2-DL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Samsung-Galaxy-Ultra-Green-Storage/dp/B0BT9CXXXX/ref=sr_1_1_sspa?crid=IQ6VHKRF2KBI&dib=eyJ2IjoiMSJ9.P5YkcbhOGcrlh6UdZlEeLkFECol1TBrWHjfZlBsfjuLBOEhbHEqcMsc8VDLzO89EApJL_mKOl5zCCwidQw29knCBIc7e05EnmwcTK-IZSBDX_VcSt_iGPx593QohY36GZ598ZuHLbrRjVLIolotX7EfT4VlQmoeBSIstiMpFHb-8cJlvTOuKtGus6x5c-ZzjbbPXIisvJxLI-C0nc8BfDNviD-ytPpGfZZMZf2pn-Yw.I26VcZSDn49aEhQnkKzJV9grxsCCrpWLqQcDlVRwca8&dib_tag=se&keywords=samsung+s23+ultra+5%2Bg&nsdOptOutParam=true&qid=1732698450&sprefix=sa%2Caps%2C233&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon;</a> <span>74,999</span></div>
+        <div class="store"><a href="https://www.samsung.com/in/smartphones/galaxy-s23-ultra/buy/?modelCode=SM-S918BZGCINS">Samsung;</a> <span>109,999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/samsung-galaxy-s23-ultra-5g-phantom-black-256-gb/p/itm15952643ba06d?pid=MOBGMFFX6E6SGYWC&lid=LSTMOBGMFFX6E6SGYWCOAZWLK&marketplace=FLIPKART&q=samsung+s23+5g&store=tyy%2F4io&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&fm=Search&iid=f0891bce-a9bb-413e-bdfd-42ec06f7bf54.MOBGMFFX6E6SGYWC.SEARCH&ppt=sp&ppn=sp&ssid=vxmz3z52bk0000001732699370531&qH=37068c103bda2953">Flipkart;</a> <span>78,999</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Samsung Galaxy S23 FE 5G (Mint 128 GB Storage) (8 GB RAM)</h2>
+    <img src="https://m.media-amazon.com/images/I/617l83eY1rL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"> <a href="https://www.amazon.in/SAMSUNG-Galaxy-S23-Mint-Storage/dp/B0CJXPYJC3/ref=sr_1_4?crid=1BUKG6A5QMOUE&dib=eyJ2IjoiMSJ9.a0buvK5PjoR0OZT_PeGDsCCluCbKvC_UV215VAhbGKKlypV4WqOR0ELc5rfOR4yiAttVFShrgdpZsMJmf8KMvOka9tXFE9KOaCdo0ldQE0a4TAoJDkSOpD1vpI5hKjPMdwd65b8r2PfrObPUxeV-2o93ntOCl-zxRSGgpdau2fG3sP3_AuXWhIrsqTa3u4R31jUgU8oHFhwL-GW9x8FZxagAXo4UEbQ2-OHFYV-FuGA.PGwEyzG7YxBC2mrcCM82Fm-XH56T-3iXPEKKAtXtqzs&dib_tag=se&keywords=samsung+s23&nsdOptOutParam=true&qid=1732699568&sprefix=samsung+s23+%2Caps%2C260&sr=8-4">Amazon;</a><span>34,999</span></p></div>
+        <div class="store"><a href="https://www.samsung.com/in/smartphones/galaxy-s23/buy/">Samsung;</a> <span>69,999</span></p></div>
+        <div class="store"><a href="https://www.flipkart.com/samsung-galaxy-s23-fe-mint-256-gb/p/itmdb72279972171?pid=MOBGVTA2R8ZH4G3C&lid=LSTMOBGVTA2R8ZH4G3C8XDOZH&marketplace=FLIPKART&q=s23+fe&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_3_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_3_na_na_ps&fm=search-autosuggest&iid=en_x4VUKJbqR1AoAxxCPNvC4AbvASM5-ouhzH5T3GxcsW9cBfQVO9yfL98y-gm2nvGuwShd_BDr_UmZpgkD7JkZ2Q%3D%3D&ppt=pp&ppn=pp&ssid=pz14pbm6vk0000001732699592947&qH=8916fe7e51ce1a74">Flipkart;</a> <span>33,999</span></p></div>
+    </div>
+</section>
+
+</main>
+<div><h1 class="fonts">Headphone</h1></div>
+<main>
+<section class="product" data-name="Product Type 10">
+    <h2>Noise 3 Wireless On-Ear Headphones with 70H Playtime, 40mm Driver </h2>
+    <img src="https://m.media-amazon.com/images/I/41ck3Y6w5tL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Noise-Launched-Wireless-Headphones-Playtime/dp/B0CY1Z6WGN/ref=sr_1_5?crid=244774IP1341F&dib=eyJ2IjoiMSJ9.4AyVs9-Z7Ixyk91jYk4EdjQp9SSgyuliva0ehNFyGeS_mVt-Q0-EWvlgZRKqkjnNdfLeBlnxGQwRGOu0yHmjSc3bvLZ_x27x7cBw9YRyvENmeHluMSWKZ0bDA9pVRvOdaihTKYyoOfLkNZVkYxw5KHE-WrVk2Wcj-JPUTPNeTf8MAIXjqZAOoQ3EnrP8syy0sM_1Faq8OxudDR-p_sNwGLh3ZvMgTozg5SVGh6q63ic.f7KXxYJVpQJtZkgzistXcPF2B7xoPDH1idGWEwh5DYE&dib_tag=se&keywords=noise+headphones+wireless&qid=1732700169&sprefix=noise+h%2Caps%2C263&sr=8-5">Amazon;</a><span>1,999</span></div>
+        <div class="store"><a href="https://www.gonoise.com/products/noise-three-wireless-headphone">Noise;</a> <span>1,799</span></div>
+        <div class="store"><a href="https://www.flipkart.com/noise-3-70-hours-playtime-enc-dual-pairing-ultra-low-latency-up-45ms-bluetooth/p/itm3ee63623fca36?pid=ACCGZKS7EHS4KQVJ&lid=LSTACCGZKS7EHS4KQVJQ8QTQN&marketplace=FLIPKART&q=noise+3+headphones+over+ear&store=0pm%2Ffcn%2Fgc3%2Fka8&srno=s_1_5&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_sc_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_sc_na_ps&fm=search-autosuggest&iid=57b26e40-b69c-4438-84df-3018fd0eb7d1.ACCGZKS7EHS4KQVJ.SEARCH&ppt=sp&ppn=sp&ssid=4wjfsrx2uo0000001732700357357&qH=589f53baf1e7bdfc">Flipkart;</a> <span>2,199</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>boAt Rockerz 425 Bluetooth Wireless Over Ear Headphones with Mic Signature Sound</h2>
+    <img src="https://m.media-amazon.com/images/I/61XvYOrqVeL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Rockerz-425-Bluetooth-Headphones-Signature/dp/B09QL3NQHX?ref_=ast_sto_dp&th=1">Amazon;</a><span>1,299</span></div>
+        <div class="store"><a href="https://www.flipkart.com/boat-rockerz-425-bluetooth/p/itm2d23dde8e8418?pid=ACCH44DVCFRU3B8E&lid=LSTACCH44DVCFRU3B8EBBOTYK&marketplace=FLIPKART&q=boat%20headphone&sattr[]=color&st=color">Flipkart;</a> <span>1,399</span></div>
+        <div class="store">  <a href="https://www.boat-lifestyle.com/products/rockerz-425-wireless-bluetooth-headphone?srsltid=AfmBOop4DZQ-yrAxWbq53zRMzPKx_vAq5N6WxL9OwlsjVAgapdG3yqAM">boAt;</a><span>1,499</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery-Beige</h2>
+    <img src="https://m.media-amazon.com/images/I/61C66qTqnwL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Sony-WH-CH520-Headphones-Multipoint-Connectivity/dp/B0BZPK3XFQ/ref=asc_df_B0BZPK3XFQ/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856241&hvpos=&hvnetw=g&hvrand=17200762627251944659&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299453&hvtargid=pla-2194558026162&mcid=9cf8c3d851623b59a6b67e06c9258c9f&gad_source=1&th=1">Amazon;</a><span>4,390</span></div>
+        <div class="store"><a href="https://www.amazon.in/Sony-WH-CH520-Headphones-Multipoint-Connectivity/dp/B0BZPK3XFQ/ref=asc_df_B0BZPK3XFQ/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856241&hvpos=&hvnetw=g&hvrand=17200762627251944659&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299453&hvtargid=pla-2194558026162&mcid=9cf8c3d851623b59a6b67e06c9258c9f&gad_source=1&th=1">Sony;</a> <span>4,390</span></div>
+        <div class="store"><a href="https://www.flipkart.com/sony-wh-ch520-50-hrs-playtime-dsee-upscale-multipoint-connection-dual-pairing-bluetooth/p/itm29e4c2b8a0883?pid=ACCGZ4MAHVHUTGDU&lid=LSTACCGZ4MAHVHUTGDURULAAV&marketplace=FLIPKART&q=sony+headphones&store=0pm%2Ffcn&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&fm=search-autosuggest&iid=74c81586-31ed-438c-b751-ffe28745d885.ACCGZ4MAHVHUTGDU.SEARCH&ppt=sp&ppn=sp&ssid=bwmkryaxdc0000001736191299185&qH=a684a6245806d98f">Flipkart;</a> <span>5,299</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Apple AirPods Max Wireless Over-Ear Headphones</h2>
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-hero-select-202409?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1725492700483" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Apple-Headphones-Cancellation-Transparency-Personalised/dp/B0DGJ7VK2X/ref=asc_df_B0DGJ7VK2X/?tag=googleshopdes-21&linkCode=df0&hvadid=710141150090&hvpos=&hvnetw=g&hvrand=2744056745621372036&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299453&hvtargid=pla-2365540294246&mcid=f0f5b2f2eedc3a589d23886f386d82d0&gad_source=1&th=1">Amazon;</a> <span>59,990</span></div>
+        <div class="store"><a href=" https://www.apple.com/in/shop/buy-airpods/airpods-max?fnode=54a07d21593e583603a638b87c0846b8d40991442c357156719fe0fac1ca6cf9937d2145b2df1e68aca269c9123ec338cbb4b4f426f878fe058955ff9e2346471c2f87a249ab30afe15d76ded1ec75ae9a1936a74b2ffff631bbbdc115b5b51e">Apple;</a> <span>59,900</span></div>
+        <div class="store"><a href="https://www.flipkart.com/apple-airpods-max-bluetooth/p/itmbb731df9b0c20?pid=ACCH4JE2NTABJCDH&lid=LSTACCH4JE2NTABJCDHVWRFHY&marketplace=FLIPKART&q=apple+headphones&store=0pm%2Ffcn&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&fm=search-autosuggest&iid=ba216574-82eb-4b19-866c-8fae6ea2f230.ACCH4JE2NTABJCDH.SEARCH&ppt=sp&ppn=sp&ssid=ra7r3mgiqo0000001736194832940&qH=950d887e5487a6d2">Flipkart;</a> <span>58,000 </span></div>
+    </div>
+</section>
+</main>
+<div><h1 class="fonts">Earbuds</h1></div>
+<main>
+<section class="product" data-name="Product Type 10">
+    <h2>Noise Buds N1 Pro in-Ear Truly Wireless Earbuds with Metallic Finish, </h2>
+    <img src="https://m.media-amazon.com/images/I/61--03DsnSL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/gp/aw/d/B0D4QJY239/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=70dfd70cbd79f5286fac182d0157d4d8&hsa_cr_id=0&qid=1736195851&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=nq9di&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=9QQYQ9PYM6KNM34DF3EV&pd_rd_wg=E12ww&pd_rd_r=b6a81df1-9762-4392-b04a-c7c6a71ef891&th=1">Amazon;</a> <span>1,499</span></div>
+        <div class="store"><a href="https://www.gonoise.com/products/noise-buds-n1-pro-truly-wireless-earbuds?variant=41184387858519&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google&utm_medium=cpc&utm_campaign=21613112351&tw_source=google&tw_adid=&tw_campaign=21613112351&gad_source=1&gclid=CjwKCAiAm-67BhBlEiwAEVftNiHh2JdXVm7nYeUK_wq11Du75cvlMB-mjX_HTRbgZ9ROziwiONq1wRoCItAQAvD_BwE">Noise;</a> <span>1,799</span></p></div>
+        <div class="store"><a href="https://www.cashify.in/noise-buds-n1-earbud-price-in-india">Cashify;</a> <span>899</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Samsung Galaxy Buds2 Pro, with Innovative AI features</h2>
+    <img src="https://m.media-amazon.com/images/I/61KVX-MbIUL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Samsung-Bluetooth-Wireless-Earbuds-Cancellation/dp/B0B8YK1DZ7/ref=asc_df_B0B8YK1DZ7/?tag=googleshopdes-21&linkCode=df0&hvadid=709948288509&hvpos=&hvnetw=g&hvrand=16398224944732538425&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299453&hvtargid=pla-1729605689430&mcid=52e274cc9c423a239e96d3c4e6f2156c&gad_source=1&th=1">Amazon;</a> <span>8,999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/samsung-galaxy-buds2-pro-sm-r510nzwains-bluetooth/p/itm72ba67178d40c?pid=ACCGS8H62GHUJ5YZ&lid=LSTACCGS8H62GHUJ5YZXIYGR5&marketplace=FLIPKART&q=samsung+earbuds&store=0pm%2Ffcn%2F821%2Fa7x&srno=s_1_4&otracker=AS_Query_OrganicAutoSuggest_2_7_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_2_7_na_na_ps&fm=search-autosuggest&iid=0306464d-40dc-4d07-a39f-a4f4298b4071.ACCGS8H62GHUJ5YZ.SEARCH&ppt=sp&ppn=sp&ssid=zcmjjqtf2o0000001736195198810&qH=b04c903965e7619c">Samsung;</a> <span>10,998</span></div>
+        <div class="store"><a href="https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds2-graphite-sm-r177nzkainu/">Flipkart;</a> <span>8,999</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>boAt Airdopes 141 ANC, Active Noise Cancellation(~32dB) </h2>
+    <img src="https://www.boat-lifestyle.com/cdn/shop/files/Airdopes_161_ANC_Elite_7.151_1300x.png?v=1721116257" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/boAt-Launched-Airdopes-141-ANC/dp/B0C7QS9M38/ref=asc_df_B0C7QS9M38/?tag=googleshopdes-21&linkCode=df0&hvadid=709948288509&hvpos=&hvnetw=g&hvrand=16343212869688759153&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2195825902699&mcid=dbba501645fa30c0aac5b95b7a6d56ce&gad_source=1&th=1">Amazon;</a> <span>1,199</span></div>
+        <div class="store"><a href="https://www.boat-lifestyle.com/products/airdopes-161-anc-elite-earbuds?variant=41327697690722&country=IN&currency=INR&gad_source=1&gclid=CjwKCAiAm-67BhBlEiwAEVftNmSjY0MPXaYiwun85DlePnOdpOCde1F2BnaBd-pDdvMtCdGsGVF0tRoCu8MQAvD_BwE">boAt;</a> <span>1,399</span></div>
+        <div class="store"><a href="https://www.flipkart.com/boat-airdopes-161-anc-w-active-noise-cancellation-32db-50hrs-playback-asap-charge-bluetooth/p/itm908b613b388ff?pid=ACCGS7SBM8WZMUKF&lid=LSTACCGS7SBM8WZMUKF4KZUQJ&marketplace=FLIPKART&cmpid=content_headphone_21668831434_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21668831434_gmc_pla&gad_source=1&gclid=CjwKCAiAm-67BhBlEiwAEVftNhya63VVCZYTXVhr9fSGGt1fVDVyPpCV-5NAi0Mygy0um7OEBw2qTRoCKCoQAvD_BwE">Flipkart;</a><span>1,299</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Apple AirPods Pro (2nd Generation) with MagSafe Case (USB‑C) ​​​​​​​(White)</h2>
+    <img src="https://m.media-amazon.com/images/I/61sRKTAfrhL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Apple-AirPods-Generation-MagSafe-USB%E2%80%91C/dp/B0CHX719JD/ref=sr_1_2_sspa?crid=FDR1C11X9FOQ&dib=eyJ2IjoiMSJ9.Y4dUoreSzrtWle_NsYUcLU_bAWoPbk8GyoeIZ3q7lgrqlVHQDZay4xZi038PWUEzgPTNxnw4iUhQ6cggc3PKSZukNdRhveMKzzwRLCAB9KCuLCvgPw5UK1DOHzctOdeDWJvFRsNOrlYqJGdkOF5-BK2QmFlp5cZBK4rC_dtiLyKWSbMCr5hzT587_uHcd7vnhX6bIqD-5Vg30MJVqb6i5oMi1LQXCNHPPAvswBVSa777X6u6cCBoAK6nu5LL5LmpZd3n2_-BN_uw-biyyu9sTef_63t815-CuzOncwLwDFM.Zb5zezfyOiEmFGL-SKhQUzBwANW3VWJScRHrc3xVDxs&dib_tag=se&keywords=airpods&qid=1736223684&s=electronics&sprefix=airpods%2Celectronics%2C274&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon;</a> <span>22,990</span></div>
+        <div class="store"><a href="https://www.apple.com/in/shop/buy-airpods/airpods-pro-2?afid=p238|slpXGxaLR-dc_mtid_187079nc38483_pcrid_658941895107_pgrid_156073798704_pntwk_g_pchan_local_pexid__ptid_pla-2290379753651_&cid=aos-IN-kwgo-pla-btb_lia--slid---product-MTJV3HN/A-IN">Apple;</a><span>24,900</span></div>
+        <div class="store"><a href="https://www.flipkart.com/apple-airpods-2nd-gen-charging-case-bluetooth-headset-mic/p/itm8f1b2b0173ce4?pid=ACCFF2R85H8YG4WH&lid=LSTACCFF2R85H8YG4WHVYNGWK&marketplace=FLIPKART&store=0pm%2Ffcn&srno=b_1_8&otracker=browse&fm=organic&iid=2cfa994a-78f3-47c6-b2e0-dc1535683af3.ACCFF2R85H8YG4WH.SEARCH&ppt=sp&ppn=productListView&ssid=z6a6h9gq4w0000001736223838837">Flipkart;</a><span>10,990</span></div>
+    </div>
+</section>
+</main>
+
+<div><h1 class="fonts">Neckband</h1></div>
+<main>
+<section class="product" data-name="Product Type 10">
+    <h2>boAt Rockerz 255 Pro+, 60HRS Battery, Fast Charge, IPX7, Dual Pairing</h2>
+    <img src="https://m.media-amazon.com/images/I/41NVmSPAgAL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_1_sspa?crid=YUVHZEM3I259&dib=eyJ2IjoiMSJ9.Fw1wKid0bB307D5T9dPtPeURS8kmSSoJjUs31rv0xCxH2cBr0rReRE4ZQ7LzWBWqJ86AcFuRCLHWpaGkcv0BFd5GP-orgQLd4dDMdJWqaoJ5aDryARmXg7ThUvDETWrwhAJLXsb6ZHE3hyDg0c8kuZ8X9aLwdC-xuNbi7sv9ZNBFIinpSp8enueQRDKU90_icCJ_C8lKU_bWvagH-_qOIsjOcW7leReler3AtQcX2K9LMWpu8ZQSUZ5FaTrjZ56aslt0c6LUSFWmaa963XSSdxuyKV20kMwaZBYmjxTE0rc.PH8YfltcyAgzNy4PDMraNUnpQxifMDPcUnGeAkyiBwo&dib_tag=se&keywords=boat+neck+band&nsdOptOutParam=true&qid=1736223967&s=electronics&sprefix=boat+nec%2Celectronics%2C244&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon;</a> <span>999</span></div>
+        <div class="store"><a href="https://www.boat-lifestyle.com/products/boat-rockerz-255-pro-plus">boAt;</a> <span>999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/boat-rockerz-255-pro-asap-charge-upto-60-hours-playback-bluetooth/p/itmd77038e81de30?pid=ACCFZ95M5JTZQH3F&lid=LSTACCFZ95M5JTZQH3FKDR9NU&marketplace=FLIPKART&store=0pm%2Ffcn%2F821%2Fa7x%2F2rv&spotlightTagId=BestsellerId_0pm%2Ffcn%2F821%2Fa7x%2F2rv&srno=b_1_3&otracker=browse&fm=organic&iid=da792aed-ac5c-4710-8993-073f201a0b97.ACCFZ95M5JTZQH3F.SEARCH&ppt=browse&ppn=browse&ssid=xswzwqb8ao0000001736224104704">Flipkart;</a> <span>999</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>OnePlus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic</h2>
+    <img src="https://m.media-amazon.com/images/I/5171kgKguGL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Oneplus-Bluetooth-Wireless-Earphones-Bombastic/dp/B0B3MNYGTW/ref=asc_df_B0B3MNYGTW/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856208&hvpos=&hvnetw=g&hvrand=6543480943235491692&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-1679858820186&mcid=90a84ba0b5c539319584b75b48a7cb98&gad_source=1&th=1">Amazon;</a><span>1,799</span></div>
+        <div class="store"><a href="https://www.oneplus.in/product/oneplus-bullets-wireless-z2">OneaPlus;</a> <span>1,799</span></div>
+        <div class="store"><p><a href="https://www.flipkart.com/oneplus-bullets-wireless-z2-bluetooth/p/itm37712330f2d6f?pid=ACCGF4JZHYTERVTY&lid=LSTACCGF4JZHYTERVTYZBNT53&marketplace=FLIPKART&q=one+plus+neck+bands&store=0pm%2Ffcn%2F821%2Fa7x&srno=s_1_4&otracker=AS_Query_OrganicAutoSuggest_2_12_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_2_12_na_na_ps&fm=search-autosuggest&iid=1890474a-6d10-42d5-9f3a-7a5499b4ee51.ACCGF4JZHYTERVTY.SEARCH&ppt=sp&ppn=sp&ssid=30gnnu12bk0000001736224408963&qH=6ec998ba3a73319a">Flipkart;</a> <span>1,799</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Noise Airwave Bluetooth in Ear Neckband with 50H of Playtime, 3 EQ Modes</h2>
+    <img src="https://m.media-amazon.com/images/I/51ZQTJ2HmKL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Noise-Airwave-Bluetooth-Neckband-Playtime/dp/B0CMTWPKCJ/ref=asc_df_B0CMTWPKCJ/?tag=googleshopdes-21&linkCode=df0&hvadid=710093968922&hvpos=&hvnetw=g&hvrand=7418152703379627966&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2282256896288&mcid=58caf725c5b23aea8fb2c9c9ffb2d524&gad_source=1&th=1">Amazon;</a> <span>998</span></div>
+        <div class="store"><a href="https://www.gonoise.com/products/noise-airwave-neckband-earphones">Noise;</a> <span>999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/noise-airwave-enc-calling-50-hrs-playtime-low-latency-up-50ms-3-eq-modes-bluetooth/p/itm87ce75b42d38c?pid=ACCGW5QGSRFXY37S&lid=LSTACCGW5QGSRFXY37SG1DRXR&marketplace=FLIPKART&cmpid=content_headphone_21950572074_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21950572074_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9gzVlajgy8lYyUG8dSavgWpcGXi6Hr5gANa4NTrZ0PUN3GP1WtCzzSxoCHw4QAvD_BwE">Flipkart;</a> <span>999 </span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>realme Buds Wireless 3 Neo in Ear Bluetooth Neckband </h2>
+    <img src="https://m.media-amazon.com/images/I/61mgDd5Xl4L._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/realme-Buds-Wireless-Bluetooth-Resistannt/dp/B0D3HT2S1M/ref=asc_df_B0D3HT2S1M/?tag=googleshopdes-21&linkCode=df0&hvadid=709948288509&hvpos=&hvnetw=g&hvrand=3103976416777396170&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2308244339249&mcid=07670219bbda3ddbb0a9b150d514840b&gad_source=1&th=1">Amazon;</a> <span>1,299</span></div>
+        <div class="store"><a href="https://www.flipkart.com/realme-buds-wireless-2-neo-type-c-fast-charge-bass-boost-bluetooth/p/itmaa10823041e8c?pid=ACCG65YC8DTGDCNN&lid=LSTACCG65YC8DTGDCNNWPEMMR&marketplace=FLIPKART&cmpid=content_headphone_21950572074_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21950572074_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g0l9_xDy2QsAE1x5z0_cBRA7nPmYPBVVJi9gf5uTncdzQ50pG9spUhoCSMEQAvD_BwE">Realme;</a> <span>1,299</span></div>
+        <div class="store"><a href="https://www.flipkart.com/realme-buds-wireless-2-neo-type-c-fast-charge-bass-boost-bluetooth/p/itmaa10823041e8c?pid=ACCG65YC8DTGDCNN&lid=LSTACCG65YC8DTGDCNNWPEMMR&marketplace=FLIPKART&cmpid=content_headphone_21950572074_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21950572074_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g0l9_xDy2QsAE1x5z0_cBRA7nPmYPBVVJi9gf5uTncdzQ50pG9spUhoCSMEQAvD_BwE">Flipkart;</a><span>1,099</span></div>
+    </div>
+</section>
+</main>
+<div><h1 class="fonts">Laptop</h1></div>
+<main>
+<section class="product" data-name="Product Type 10">
+    <h2>Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM </h2>
+    <img src="https://m.media-amazon.com/images/I/316ArzLeJ2L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5W4NNB/ref=asc_df_B08N5W4NNB/?tag=googleshopdes-21&linkCode=df0&hvadid=709855510254&hvpos=&hvnetw=g&hvrand=16860811246278497518&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-1136686879362&psc=1&mcid=9ad65b98b6723b2c8aaca1185061d230&gad_source=1">Amazon;</a> <span>69,990</span></div>
+        <div class="store"><a href="https://www.flipkart.com/apple-macbook-air-m2-8-gb-256-gb-ssd-mac-os-monterey-mly33hn-a/p/itm0946c05e6335c?pid=COMGFB2GMCRXZG85&lid=LSTCOMGFB2GMCRXZG855GPGWQ&marketplace=FLIPKART&cmpid=content_computer_21950572074_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21950572074_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g0LIdGBwaxgEKRxVQ9Le_y065p3IALrma_Sfob1GILF_5GnqB0q9IBoCPf0QAvD_BwE">Apple;</a> <span>75,990</span></div>
+        <div class="store"><a href="https://www.flipkart.com/apple-2020-macbook-air-m1-8-gb-ssd-256-gb-ssd-mac-os-big-sur-mgn63hn-a/p/itm3c872f9e67bc6">Flipkart;</a> <span>71,990</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Apple 2024 MacBook Air 15″ Laptop with M3 chip: 38.91 cm (15.3″) </h2>
+    <img src="https://m.media-amazon.com/images/I/41cgBFdKbfL._SY445_SX342_QL70_FMwebp_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Apple-2024-MacBook-Laptop-chip/dp/B0CX22LYY9/ref=sr_1_2_sspa?adgrpid=94221362531&dib=eyJ2IjoiMSJ9.CHExN13tCcFNwuIzOI3JSqaqCmzBrKkIwm5NOL81lqDJyRka8QE9n5sTjggHKzs42rPqLpMrtnvV66V4W3LfYOQWx4EAND13e5mhTrQ-3lH6iYSNUdIVhcEU5hdao2J3o4TwgnxA-1JQwwiUuOl7Nr-1h4GO61tdQSJTXFPeKlW_Z1w2D8a_s-xJgUvECZ8HB1MaHsvw0TRVEUtMvEhU36CJDJq_JMdTOzlyoI3uaNI.jlcIUsGBYTYj6nmHTNwgKlfOob_myRON3rrQPJlFjsc&dib_tag=se&ext_vrnc=hi&hvadid=590450674960&hvdev=c&hvlocphy=9151662&hvnetw=g&hvqmt=e&hvrand=12955412485530676532&hvtargid=kwd-361547978607&hydadcr=16601_2163995&keywords=macbook&qid=1736420715&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon;</a> <span>1,44,990</span></div>
+        <div class="store"><p><a href="https://www.apple.com/in/shop/buy-mac/macbook-air/13-inch-midnight-apple-m3-chip-with-8-core-cpu-and-8-core-gpu-16gb-memory-256gb?afid=p238%7CsAggu4PFV-dc_mtid_187079nc38483_pcrid_659862545469_pgrid_156073805264_pntwk_g_pchan_local_pexid__ptid_pla-1020039387989_&cid=aos-IN-kwgo-pla-mac_lia--slid---product-MC8K4HN/A-IN">Apple;</a> <span>1,14,990</span></div>
+        <div class="store"><p><a href="https://www.flipkart.com/apple-m3-16-gb-256-gb-ssd-macos-sequoia-mc8g4hn-a/p/itmcc3c1bdc855b9?pid=COMH64PYUGCW7EBY&lid=LSTCOMH64PYUGCW7EBYMB2SAQ&marketplace=FLIPKART&q=macbook+air+m3&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_3_8_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_3_8_na_na_ps&fm=organic&iid=1eaef877-e59f-495b-9eae-521d795c4cd4.COMH64PYUGCW7EBY.SEARCH&ppt=pp&ppn=pp&ssid=jyw8ykg89s0000001736421915924&qH=5fd1fe0809b5cae0">Flipkart;</a> <span>1,14,990</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15" (38.1cm) </h2>
+    <img src="https://m.media-amazon.com/images/I/81epBowa4UL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Lenovo-IdeaPad-i7-13620H-38-1cm-83EM008GIN/dp/B0D6NCVQZQ/ref=asc_df_B0D6NCVQZQ/?tag=googleshopdes-21&linkCode=df0&hvadid=709855510254&hvpos=&hvnetw=g&hvrand=2557540954789895407&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2321123010457&mcid=6617c8b8ca733c71be021bcb17d9c6ce&gad_source=1&th=1">Amazon;</a> <span>65,990</span></div>
+        <div class="store"><a href="https://www.lenovo.com/in/en/p/laptops/ideapad/ideapad-s-series/ideapad-slim-3i-gen-8-15-inch-intel/83em009yin?cid=in:sem:eqqslb&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9gyk16BQ8aa7Oc1orUgb1nMASLxhJPIIXbxIfI0DNGzV2ho-5CkPvfhoCr3sQAvD_BwE">Lenovo;</a> <span>66,491</span></p></div>
+        <div class="store"><a href="https://www.flipkart.com/lenovo-ideapad-slim-3-intel-core-i7-13th-gen-core-i7-13620h-10c-6p-4e-16t-p-core-2-4-4-9ghz-e-core-1-8-3-6ghz-16-gb-512-gb-ssd-windows-11-home-15irh8-thin-light-laptop/p/itmc6a0fbc4e3bee?pid=COMH27TZK9PRGZYZ&lid=LSTCOMH27TZK9PRGZYZKQQ4QF&marketplace=FLIPKART&cmpid=content_computer_21950572074_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21950572074_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g-cHm7g1YUMDdDDHjbfRimVncS0yJfvh2itxIlzdMTijpfiTAzImoxoCn6EQAvD_BwE">Flipkart;</a> <span>68,990</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>HP Pavilion 14, 12th Gen Intel Core i7-1255U, 16GB DDR4, 1TB SSD</h2>
+    <img src="https://m.media-amazon.com/images/I/71ZQWT7IIyL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/HP-Pavilion-Micro-Edge-Graphics-14-dv2015TU/dp/B0B1MBFJJ2/ref=asc_df_B0B1MBFJJ2/?tag=googleshopdes-21&linkCode=df0&hvadid=709855510254&hvpos=&hvnetw=g&hvrand=5860786182804542191&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-1662419060390&mcid=597ab3c3bc7538749884fdd34e41e1dd&gad_source=1&th=1">Amazon;</a> <span>75,090</span></p></div>
+        <div class="store"><a href="https://www.hp.com/in-en/shop/hp-pavilion-laptop-14-dv2015tu-6k9j2pa.html">Hp;</a> <span>76,999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/hp-pavilion-14-touchscreen-intel-core-i5-12th-gen-1235u-16-gb-512-gb-ssd-windows-11-home-14-dv2041tu-laptop/p/itm5b68c71d614ff?pid=COMGZHNMQFWGTVDX&lid=LSTCOMGZHNMQFWGTVDXOENG8E&marketplace=FLIPKART&q=hp+pavillion+14&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=caa1ebaa-2f39-423d-a896-e046861f2acc.COMGZHNMQFWGTVDX.SEARCH&ppt=sp&ppn=sp&ssid=a19gpq4sm80000001736422758725&qH=dc649d18683931da">Flipkart;</a><span>61,990</span></div>
+    </div>
+</section>
+</main>
+
+<div><h1 class="fonts">Smart Watch</h1></div>
+<main>
+<section class="product" data-name="Product Type 10">
+    <h2>Apple Watch Ultra [GPS + Cellular 49 mm] smart watch w/Rugged  </h2>
+    <img src="https://m.media-amazon.com/images/I/91jzT-Hi-TL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Apple-Cellular-Precision-Extra-Long-BatteryLife/dp/B0BDKRVZ53/ref=sr_1_2_sspa?crid=3I68IYY3U31ML&dib=eyJ2IjoiMSJ9.PhaFiNmEdW4dlnIk5emPjE9cc03nlRSBa-F2pA_Njqva5yg5ffUzfytXGEt7GEXl3OEWYZhqVkwE0lKDBiNt1R5H1Lr_7HGOq3zpbOBwp-fjkiCJ1jkhp0dX0xxLeqPsJ5kRS7pGcwi9WjtPdoRRIAHMU5lKCy3modfzFw5pkO42AdiVxmsCJC7ZUOXCICl4__pJsynaXDOXs9lsInh1UH03McqlnfHIlU9RGRe3qrddSsQzJkOG_1bDNcMYlyBHWAUmmORlJyHtMdPEjp24wFAh0h8n232v0yy4Vaa8rEI.q4ziPaak8tsFiAgSNqBGl3Kh7mVJKsEyjls-VF83s0M&dib_tag=se&keywords=apple%2Bwatch&nsdOptOutParam=true&qid=1736422913&s=computers&sprefix=apple%2Bwatch%2Ccomputers%2C239&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Amazon;</a> <span>89,899</span></div>
+        <div class="store"><a href="https://www.apple.com/in/shop/buy-watch/apple-watch-ultra">Apple;</a> <span>89,900</span></div>
+        <div class="store"><a href="https://www.flipkart.com/apple-watch-ultra-2-gps-cellular-49mm-natural-titanium-navy-ocean-band/p/itm99834d6b83bfd?pid=SMWH4JBWMVGWXWYG&lid=LSTSMWH4JBWMVGWXWYGZD793U&marketplace=FLIPKART&cmpid=content_smartwatch_21668831434_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21668831434_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g18gRNN4v0nsPQqmRwKPSmKuQUOfDxcOtDEcoVcfEPDmukQR6zpq5RoCETgQAvD_BwE">Flipkart;</a><span>89,900</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>boAt Wave Sigma 3 w/Turn-by-Turn Navigation, 2.01" HD Display</h2>
+    <img src="https://m.media-amazon.com/images/I/61Fwv0TtQnL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/boAt-Navigation-Display-Bluetooth-Emergency/dp/B0CVQG14RR/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.578l0hlbZlwv0Unp6IdRnxC8_Hp0gFgMNnfgbSswQFB1OyHtAbBDwPnYBzu_JTor7dCYknx6d0_tO6EesXQx_4kKtkDL-srmjhnv7Ytx3Qq8nlg3yupIFV-V_jC5pPpvwKzjLqxv5GPWNhL_Q5bQX8_vF0I7unsbXcUUVoD_t3rB2sbSx6AGjR_wEuppCes6QoA6nw_EMffP1FZc9exMSHb1qZ3bFwVEVWh2THdSq-o.R1FLpFLqZt3XnVj6BndmzAlK8x4QNxfNaoEePQ0O8_c&dib_tag=se&keywords=boat%2Bwave%2Bglory%2Bsmartwatch&nsdOptOutParam=true&qid=1736429466&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Amazon;</a> <span>1,499</span> </div>
+        <div class="store"><a href="https://www.boat-lifestyle.com/products/wave-glory-pro-metal-body-smartwatch?variant=40481379942498&country=IN&currency=INR&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g0Z6iBuu6S8EjACoT6hjqOZ_uZKQX7ClaWMRzOLOvMtQIhgR7FOhdRoCSD8QAvD_BwE">boAt;</a> <span>2,499</span></div>
+        <div class="store"><a href="https://www.flipkart.com/boat-wave-pro-1-69inch-hd-display-withtemperature-sensor-live-cricket-updates-smartwatch/p/itmb0d4f9f9868e0">Flipkart;</a> <span>2,090</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Noise Icon 4 with Stunning 1.96'' AMOLED Display, Metallic Finish, </h2>
+    <img src="https://m.media-amazon.com/images/I/61gvNkugY4L._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Noise-Unlimited-Display-Functional-Metallic/dp/B0D6GJH129/ref=asc_df_B0D6GJH129/?tag=googleshopdes-21&linkCode=df0&hvadid=710088155495&hvpos=&hvnetw=g&hvrand=7227836304441544721&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2527943223272&psc=1&mcid=734ca0f0c9ac3e0f82197d73d66093bb&gad_source=1">Amazon;</a> <span>2,499</span></div>
+        <div class="store"><a href="https://www.gonoise.com/products/noise-colorfit-pulse-4-max-smart-watch?variant=41118040522839&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google&utm_medium=cpc&utm_campaign=21460019033&tw_source=google&tw_adid=&tw_campaign=21460019033&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g7G3uzKjSK1h0D0AmLbq2okDDrRyaEiZVFyR2YLCp-PmLEqydOpXrBoCyVYQAvD_BwE">Noise;</a> <span>2,499</span></div>
+        <div class="store"><a href="https://www.flipkart.com/noise-icon-4-stunning-1-96-amoled-display-metallic-finish-bt-calling-smartwatch/p/itm81880ffb861de?pid=SMWGWZVPAZTGX3WY&lid=LSTSMWGWZVPAZTGX3WY9UHS5W&marketplace=FLIPKART&cmpid=content_smartwatch_21668831434_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&&cmpid=content_21668831434_gmc_pla&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g_WrWGRaa34fd1P7QSAesriEgyakYkWuRKf9jX34u95N2JfX7dfcLhoC2x8QAvD_BwE">Flipkart;</a><span>1,998</span></div>
+    </div>
+</section>
+<section class="product" data-name="Product Type 10">
+    <h2>Samsung Galaxy Watch 7 (44mm, Silver, BT) </h2>
+    <img src="https://m.media-amazon.com/images/I/71d7quY-KxL._SX679_.jpg" alt="Product 10">
+    <div class="prices">
+        <div class="store"><a href="https://www.amazon.in/Samsung-Processor-Sapphire-Aluminum-Monitor/dp/B0D7M5BZK2/ref=asc_df_B0D7M5BZK2/?tag=googleshopdes-21&linkCode=df0&hvadid=710088155495&hvpos=&hvnetw=g&hvrand=1519627525897605782&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151662&hvtargid=pla-2338492595165&psc=1&mcid=f9fc494219eb3dd89d47197b5929dc4d&gad_source=">Amazon;</a> <span>29,599</span></div>
+        <div class="store"><a href="https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch7-44mm-silver-bluetooth-sm-l310nzsains/buy/?cid=in_pd_ppc_google_im-mobile-smartphones-watch7-dtc_sales_samsung-watch7-all-2023_eshop-pmax-pla_23fJune2023-na_1ur-501357l-2025-eshop-bau-performancemax-cpc_pfm--21415441391------x--SM-L310NZSAINS&gad_source=1&gclid=CjwKCAiAhP67BhAVEiwA2E_9g0Ol2gff17YVFEChaH8_dkq33zOMMQeWA2w-0vgqvAXln2V0zahOzhoCZqAQAvD_BwE">Samsung;</a> <span>32,999</span></div>
+        <div class="store"><a href="https://www.flipkart.com/samsung-galaxy-watch-7/p/itmf8bef51645876">Flipkart;</a> <span>36,499</span></div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="foot">
+        <h3 class="feet">@copyrights</h3>
+        <h3 class="sheet">Price Amplifier</h3>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
